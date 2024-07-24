@@ -329,54 +329,16 @@ return [
             'icon' => 'far fa-fw fa-bookmark',
             'active' => ['admin/tags*'],
         ],
+        ['header' => 'Opciones de Blog'],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text'  => 'Listado de Post',
+            'icon'  => 'far fa-fw fa-clipboard',
+            'route' => 'admin.posts.index',
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+            'text'   => 'Crea un Post',
+            'icon'   => 'far fa-fw fa-file',
+            'route'  => 'admin.posts.create',
         ],
         [
             'text'       => 'information',
@@ -537,5 +499,5 @@ return [
     |
     */
 
-    'livewire' => false,
+    'livewire' => true,
 ];

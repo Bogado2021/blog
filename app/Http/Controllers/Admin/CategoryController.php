@@ -67,7 +67,7 @@ class CategoryController extends Controller
         ]);
 
         $category->update($request->all());
-        return redirect()->route('admin.categories.edit', $category)->with('info', 'El registro se actulizp con exito');
+        return redirect()->route('admin.categories.edit', $category)->with('info', 'El registro se actulizó con exito');
     }
 
     /**

@@ -9,6 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
+    protected $guarded = ['id', 'created_at', 'updated_at'];
     /**relacion muchos a uno */
 
     public function users(){
@@ -21,7 +22,7 @@ class Post extends Model
 
     /**relacion muchos a muchoa */
 
-    public function tags(){
+    public function tag(){
         return $this->belongsToMany(Tag::class);
      }
 
